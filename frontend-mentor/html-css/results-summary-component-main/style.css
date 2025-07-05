@@ -1,0 +1,232 @@
+@media screen and (max-width: 768px) {
+  .div-container {
+    grid-template-columns: 1fr;
+    margin: 20px;
+  }
+
+  #your-result {
+    border-radius: 0 0 25px 25px;
+  }
+
+  .summary {
+    border-radius: 25px 25px 0 0;
+  }
+
+  .button {
+    width: calc(100% - 140px);
+    margin: 20px auto;
+    padding: 15px 0;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Figtree:ital,wght@0,300..900;1,300..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+}
+/*partie Summary*/
+body
+{
+    background-image: url(assets/images/18902143-technologie-numerique-abstraite-fond-blanc-polygonal-futuriste-cyber-science-tech-innovation-communication-future-a.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+.div-container  /*contient le conteneur en entier*/
+{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+     margin-top: 150px;
+    margin-bottom: 150px;
+    margin-left: 150px;
+    margin-right: 150px;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.1);
+}
+
+#your-result /*contient le container du résultat final*/
+{
+    background-color: hsl(241, 81%, 54%);
+    border-radius: 25px;
+}
+
+.summary  /*contient la partie summmary*/
+{
+    font-family: 'hanken grotesk', serif;
+    font-size: 16px;
+    font-weight: 700px;
+}
+.titre /*contient le titre summary*/
+{
+    color: black;
+    font-family: 'hanken grotesk', serif;
+    font-size: 24px;
+    font-weight: bolder;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 18px;
+    padding-right: 18px;
+    margin-right: 70px;
+    margin-left: 70px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    flex-direction: flex-end;
+}
+.reaction, .memory,
+.verbal,.visual 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px;
+    margin: 10px 70px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.number /*les numeros du summary*/
+{
+    color: rgb(5, 5, 69);
+    font-weight: bolder;
+    
+}
+.hundred
+{
+    color: rgb(148, 148, 166);
+}
+.numbers
+{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    row-gap: 12px;
+}
+.reaction /*1st reaction*/
+{
+    color: hsl(0, 100%, 67%);
+    background-color: hsl(0, 91%, 95%);
+}
+.reaction-image
+{
+    padding-right: 12px;
+}
+.memory /* 2nd recation*/
+{
+    color: hsl(39, 100%, 56%);
+    background-color: hsl(40, 68%, 94%);
+}
+.memory-image
+{
+    padding-right: 12px;
+}
+.verbal /*3rd verbal*/
+{
+    color: hsl(166, 100%, 37%);
+    background-color: hsl(166, 83%, 93%);
+}
+.verbal-image
+{
+    padding-right: 12px;
+}
+.visual /*4th visual*/
+{
+    color: hsl(234, 85%, 45%);
+    background-color: hsl(240, 100%, 98%);
+}
+.visual-image
+{
+    padding-right: 12px;
+}
+.button
+{
+    
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    padding: 18px 180px;
+    margin : 40px 70px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p
+{
+    padding-right: 230px;
+}
+.verbal-visual
+{
+    padding-right: 243px;
+}
+
+/*partie 2, partie your score*/
+#your-result /* case de yoour result en entier*/
+{
+    background: linear-gradient (hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+    border-radius: 25px;
+    padding: 40px;
+    text-align: center;
+    color: hsl(225, 28%, 69%);
+    font-family: 'Hanken Grotesk', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 125px;
+}
+h3 /*titre your result*/
+{
+    color: hsl(221, 100%, 96%);
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+}
+.score-number /*nombre76*/
+{
+    background:radial-gradient(
+    circle at top,
+    rgb(66, 28, 169),
+    hsla(240, 32%, 59%, 0)
+  );
+    border-radius: 60%;
+    font-weight: 800px;
+    width: 180px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 68px;
+    font-weight: 800;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 25px;
+    padding-top: 25px;
+}
+.score-from-number/*/100*/
+{
+    font-size: 14px;
+    color: hsl(225, 28%, 69%);
+    margin-top: 1px;
+ }
+.great /*mention great*/
+{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: hsl(0, 0%, 100%);
+}
+p /*paragraphe*/
+{
+    color: hsl(225, 28%, 69%);
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.4;
+    font-weight: 500px;
+}
